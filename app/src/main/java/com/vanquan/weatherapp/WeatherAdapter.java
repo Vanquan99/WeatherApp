@@ -42,9 +42,12 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.ViewHold
     public void onBindViewHolder(@NonNull WeatherAdapter.ViewHolder holder, int position) {
 
         WeatherModel model = weatherModelArrayList.get(position);
-        holder.temperatureTV.setText(model.getTemperator()+"C");
+        holder.temperatureTV.setText(model.getTemperator()+"°C");
 
-        Picasso.get().load("http:".concat(model.getIcon())).into(holder.conditionTV);
+//        Picasso.get().load("http:".concat(model.getIcon())).into(holder.conditionTV);
+
+
+
 
         holder.windTV.setText(model.getWindSpeed()+"km/h");
 

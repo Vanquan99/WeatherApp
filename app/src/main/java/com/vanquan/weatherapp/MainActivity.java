@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
-        homeRL = findViewById(R.id.home);
+        homeRL = findViewById(R.id.idRHome);
         loadingPB = findViewById(R.id.idPBLoading);
         cityNameTV = findViewById(R.id.idTVCityName);
         temperatureTV = findViewById(R.id.idTVTemperature);
@@ -185,10 +185,10 @@ public class MainActivity extends AppCompatActivity {
                     conditionTV.setText(condition);
                     if (isDay==1){
                         //morning
-                        Picasso.get().load("https://unsplash.com/photos/iAk_yM7r8iE").into(backIV);
+                        Picasso.get().load("https://images.unsplash.com/photo-1500817487388-039e623edc21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80").into(backIV);
 
                     }else {
-                        Picasso.get().load("https://unsplash.com/photos/DmadqGTFvhc").into(backIV);
+                        Picasso.get().load("https://images.unsplash.com/photo-1472552944129-b035e9ea3744?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80").into(backIV);
                     }
 
                     JSONObject forecastobj = response.getJSONObject("forecast");
